@@ -5,5 +5,15 @@ int main()
     char ch = 'S';
     printf("%d", sizeof(char));
     printf("\n%d", a);
+    struct mr
+    {
+        /* data */
+        double dd;
+        int a ,b ;
+        float c , d;
+        char name[10];
+    }t;
+    printf("\n%d",sizeof(t));
+    
     return 0;
 }

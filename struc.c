@@ -6,12 +6,14 @@ struct stu{
     double per;
 }first={4113,"Digvijay",93.20};
 int main(){
+    void *p;
+    printf("%d",sizeof(p));
     struct stu a,b;
-    int i=0;
-    while(first.name[i]!='\0'){
-        printf("%c", first.name[i]);
-        i++;
-    }
-    printf("%d\n%c\n%f",first. roll, first.name,first.per);
+    a.roll=9999;
+    a.per=89;
+    scanf("%s",a.name);
+    struct stu *pp;
+    pp=&first;
+    printf("%d\n%s\n%f",pp-> roll,pp->name,pp->per);
     return 0;
 }
